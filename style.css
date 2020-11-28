@@ -1,0 +1,116 @@
+body {
+  background-color: #eef9ea;
+}
+
+.dop-color-nav {
+  background-color: #80ab29;
+}
+.main-color-nav {
+  background-color: #274116 !important;
+}
+.navbar-brandn {
+  font-size: xx-large;
+  font-family: "Franklin Gothic Medium";
+  font-weight: normal;
+  vertical-align: center;
+  color: #fcfdfb !important;
+}
+
+.navbar-nav {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: none;
+  display: table-cell;
+  text-align: center;
+}
+
+.nav-link {
+  font-size: 28px;
+  font-family: "Franklin Gothic Medium";
+  font-weight: normal;
+  text-decoration: underline;
+  color: #fcfdfb !important;
+}
+
+.item-nav {
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  text-align: left;
+  color: #ffffff !important;
+}
+
+.card-group {
+  margin-block-start: 1pc;
+  padding: 2pc;
+}
+
+.navbar-light-bg-liht {
+  background-color: #274116 !important;
+}
+
+.cards {
+  width: 100%;
+}
+
+.card-group {
+  margin-left: 2pc;
+  margin-right: 2pc;
+}
+
+.button-main-ligth {
+  background-color: #80ab29; /* Green */
+  color: white;
+  padding: 7px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 0.5pc;
+  cursor: pointer;
+}
+
+.button-main {
+  background-color: white;
+  color: #274116;
+  border: 2px solid #4caf50;
+}
+
+.button-main:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.text-form-cook {
+  font-family: "Franklin Gothic Medium";
+  font-weight: normal;
+  vertical-align: center;
+  color: #274116 !important;
+}
+
+.form-cook {
+  border-radius: 1px;
+  background-color: #bbe764 !important;
+  margin: 1px;
+}
+
+.text-form-registration {
+  font-size: xx-large;
+  font-family: "Franklin Gothic Medium";
+  font-weight: normal;
+  vertical-align: center;
+  color: #274116 !important;
+}
+.active-page {
+  color: #274116 !important;
+}
+
+.active-page-ligth {
+  color: #80ab29 !important;
+}
+
+img {
+  border-radius: 0.5pc !important;
+}
