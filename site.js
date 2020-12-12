@@ -5,7 +5,7 @@ form.addEventListener("submit", function(event) {
   new FormData(form);
 });
 
-form.addEventListener("recheptsform", event => {
+form.addEventListener("formdata", event => {
   const data = event.formData;
 
   // get the data
