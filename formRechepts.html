@@ -9,23 +9,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="stylesheet" href="style.css" />
-      <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-  
-    ym(70424401, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true,
-         webvisor:true
-    });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/70424401" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
+    <script src="site.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(70424401, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/70424401" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -77,102 +82,101 @@
     </div>
     <div class="form-cook">
         <div class="container text-form-cook form-cook">
-            <form>
+            <form name="recheptsformname" inputmode="simbit">
                 <div class="form-group row">
                     <label for="inputEmail" class="col-sm-2 col-form-label"></label>
                     <h2>Название рецепта:</h2></label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Название рецепта" />
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Название рецепта"
+                            name="namerecept" />
                     </div>
                 </div>
-            </form>
-            <div>
-            <form>
-                <h4>Количество порций и время приготовления:</h4>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="">Порции, время приготовления</span>
+                <div>
+                    <h4>Количество порций и время приготовления:</h4>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">Порции, время приготовления</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="порции" name="portion">
+                        <input type="text" class="form-control" placeholder="время приготовление" name="timecooking">
                     </div>
-                    <input type="text" class="form-control">
-                    <input type="text" class="form-control">
                 </div>
-            </form>
-            </div>
-            <div>
-                <h4>Ингредиенты</h4>
-                <div class="row row-cols-1">
+                <div>
+                    <h4>Ингредиенты</h4>
+                    <div class="row row-cols-1">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="">Ингредиент и количество</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="ингредиент" name="ingredient">
+                                    <input type="text" class="form-control" placeholder="количество" name="count">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="">Ингредиент и количество</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="ингредиент" name="ingredient1">
+                                    <input type="text" class="form-control" placeholder="количество" name="count1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="button-main-ligth" style="margin:1pc" name="addnewingredient">Добавить ещё ингредиент</button>
+                </div>
+                <h4>Инструкция</h4>
+                <h5>Опишите пошагово приготовление:</h5>
+                <div class="row-cols-1">
                     <div class="col mb-4">
                         <div class="card">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="">Ингредиент и количество</span>
+                                    <span class="input-group-text">Шаг 1</span>
                                 </div>
-                                <input type="text" class="form-control">
-                                <input type="text" class="form-control">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="">Ингредиент и количество</span>
-                                </div>
-                                <input type="text" class="form-control">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" name="step1">
+                        <label class="custom-file-label" for="customFile">Добавить фото шага</label>
                     </div>
                 </div>
-                <button type="button" class="button-main-ligth" style="margin:1pc">Добавить ещё ингредиент</button>
-            </div>
-            <h4>Инструкция</h4>
-            <h5>Опишите пошагово приготовление:</h5>
-            <div class="row-cols-1">
                 <div class="col mb-4">
-                    <div class="card">
+                    <div class="card" style="margin:1pc">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text">Шаг 1</span>
+                                <span class="input-group-text">Шаг 2</span>
                             </div>
                             <textarea class="form-control" aria-label="With textarea"></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFile">
+                    <input type="file" class="custom-file-input" id="customFile" name="step2">
                     <label class="custom-file-label" for="customFile">Добавить фото шага</label>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card" style="margin:1pc">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Шаг 2</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                    </div>
+                <div>
+                    <button type="button" class="button-main-ligth" style="margin:1pc" name="addstep">Добавить шаг</button>
                 </div>
-            </div>
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Добавить фото шага</label>
-            </div>
-            <div>
-                <button type="button" class="button-main-ligth" style="margin:1pc">Добавить шаг</button>
-            </div>
-            <div>
-                <select class="custom-select" id="inputGroupSelect03" style="margin: 1pc;">
-                    <option selected>Выберите категорию блюда</option>
-                    <option value="1">Первое блюдо</option>
-                    <option value="2">Второе блюдо</option>
-                    <option value="3">Салаты</option>
-                    <option value="4">Десерты</option>
-                    <option value="5">Закуски</option>
-                    <option value="6">Напитки</option>
-                </select>
-            </div>
-            <button type="button" class="button-main-ligth" style="margin:1pc">Добавить рецепт</button>
+                <div>
+                    <select class="custom-select" id="inputGroupSelect03" style="margin: 1pc;" name="spinnertypecook">
+                        <option selected>Выберите категорию блюда</option>
+                        <option value="1">Первое блюдо</option>
+                        <option value="2">Второе блюдо</option>
+                        <option value="3">Салаты</option>
+                        <option value="4">Десерты</option>
+                        <option value="5">Закуски</option>
+                        <option value="6">Напитки</option>
+                    </select>
+                </div>
+                <button type="button" class="button-main-ligth" style="margin:1pc" name="bthaddrechept">Добавить рецепт</button>
+            </form>
         </div>
     </div>
 </body>
