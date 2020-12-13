@@ -1,5 +1,5 @@
+let formData = new FormData();
 const form = document.forms[0].elements[9];
-
 form.addEventListener("submit", buttonPressed);
 console.log("Скрипт загружен")
 var event = document.getElementById('bthaddrechept');
