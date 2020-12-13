@@ -5,7 +5,7 @@ console.log("Скрипт загружен")
 var event = document.getElementById('bthaddrechept');
 function buttonPressed(event) {
   if(event = null){
-    return;
+    return; 
   }
   console.log('Button is pressed')
   event.preventDefault();
