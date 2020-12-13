@@ -1,5 +1,3 @@
-const { default: Swal } = require("sweetalert2");
-
 const form = document.forms[0].elements[9];
 
 form.addEventListener("submit", buttonPressed);
