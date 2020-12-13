@@ -101,8 +101,8 @@ function buttonPressed(evt) {
     formData.append('typecook', document.forms.recheptsform.elements.spinnertypecook.value);
     Swal.fire(
       'Добавлено',
-      'Вы добавили рецепт' + formData.get('namerecept') +
-      'В ближайшее время рецепт пройдет обработку и добавится на сайт',
+      'Вы добавили рецепт ' + formData.get('namerecept') +
+      '. В ближайшее время рецепт пройдет обработку и появится на сайте',
       'success'
     )
     console.log("Успешно");
