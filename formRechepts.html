@@ -121,58 +121,53 @@
                 </div>
                 <h4>Инструкция</h4>
                 <h5>Опишите пошагово приготовление:</h5>
-                <div class="row-cols-1">
+                <div class="row-cols-1" style="margin: 1pc;">
                     <div class="col mb-4">
-                        <div class="card">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">Шаг 1</span>
-                                </div>
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Шаг 1</span>
                             </div>
+                            <input type="text" class="form-control" name="step1">
                         </div>
                     </div>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile" name="step1">
+                    <div class="custom-file" style="margin: 1pc;">
+                        <input type="file" class="custom-file-input" id="customFile">
                         <label class="custom-file-label" for="customFile">Добавить фото шага</label>
                     </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card" style="margin:1pc">
+                    <div class="col mb-4">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Шаг 2</span>
                             </div>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <input type="text" class="form-control" name="step2">
                         </div>
                     </div>
-                </div>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFile" name="step2">
-                    <label class="custom-file-label" for="customFile">Добавить фото шага</label>
-                </div>
-                <div>
-                    <button type="button" class="button-main-ligth" style="margin:1pc" name="addstep">Добавить
-                        шаг</button>
-                </div>
-                <div>
-                    <select class="custom-select" id="inputGroupSelect03" style="margin: 1pc;" name="spinnertypecook">
-                        <option selected>Выберите категорию блюда</option>
-                        <option value="1">Первое блюдо</option>
-                        <option value="2">Второе блюдо</option>
-                        <option value="3">Салаты</option>
-                        <option value="4">Десерты</option>
-                        <option value="5">Закуски</option>
-                        <option value="6">Напитки</option>
-                    </select>
-                </div>
-                <a href="#"><button type="submit" value="Добавить рецепт" class="button-main-ligth"
-                        style="margin:1pc" name="addrechept">Добавить рецепт</button></a>
+                    <div class="custom-file"style="margin: 1pc;">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Добавить фото шага</label>
+                    </div>
+                    <div>
+                        <button type="button" class="button-main-ligth" style="margin:1pc" name="addstep">Добавить
+                            шаг</button>
+                    </div>
+                    <div>
+                        <select class="custom-select" id="inputGroupSelect03" style="margin: 1pc;"
+                            name="spinnertypecook">
+                            <option selected>Выберите категорию блюда</option>
+                            <option value="1">Первое блюдо</option>
+                            <option value="2">Второе блюдо</option>
+                            <option value="3">Салаты</option>
+                            <option value="4">Десерты</option>
+                            <option value="5">Закуски</option>
+                            <option value="6">Напитки</option>
+                        </select>
+                    </div>
+                    <a href="#"><button type="submit" value="Добавить рецепт" class="button-main-ligth"
+                            style="margin:1pc" id="addrechept">Добавить рецепт</button></a>
             </form>
         </div>
     </div>
     <script src="site.js"></script>
 </body>
-
 
 </html>
